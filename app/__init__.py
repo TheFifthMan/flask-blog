@@ -33,6 +33,9 @@ def create_app(config_name):
     from app.admin import admin as admin_bp
     app.register_blueprint(admin_bp)
 
+    from app.auth import auth as auth_bp
+    app.register_blueprint(auth_bp)
+
 
     if not app.debug:
         # 记录到文件

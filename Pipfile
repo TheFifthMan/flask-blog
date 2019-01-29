@@ -12,6 +12,8 @@ python-dotenv = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 pymysql = "*"
+flask-login = "*"
+flask-wtf = "*"
 
 [requires]
 python_version = "3.6"

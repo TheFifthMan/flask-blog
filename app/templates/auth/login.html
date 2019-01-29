@@ -10,18 +10,23 @@
                     </div>
 
                     <form class="card-body py-5">
+                         {{ form.hidden_tag() }}
+
                         <div class="form-group">
                             <label class="form-control-label">Name</label>
-                            <input type="email" class="form-control">
+                            {{ form.username() }}
+                            <!--input type="email" class="form-control"-->
                         </div>
 
                         <div class="form-group">
                             <label class="form-control-label">Password</label>
-                            <input type="password" class="form-control">
+                            {{ form.password() }}
+                            <!--input type="password" class="form-control"-->
                         </div>
 
                         <div class="custom-control custom-checkbox mt-4">
-                            <input type="checkbox" class="custom-control-input" id="login">
+                            <!--input type="checkbox" class="custom-control-input" id="login"-->
+                            {{ form.remember_me() }}
                             <label class="custom-control-label" for="login">Check this custom checkbox</label>
                         </div>
                     </form>
@@ -29,7 +34,8 @@
                     <div class="card-footer">
                         <div class="row">
                             <div class="col-6">
-                                <button type="submit" class="btn btn-primary px-5">Login</button>
+                                <!--button type="submit" class="btn btn-primary px-5">Login</button-->
+                                {{ form.submit() }}
                             </div>
 
                             <div class="col-6">
@@ -42,4 +48,4 @@
         </div>
     </div>
 </div>
-{% endblack %}
+{% endblock %}
